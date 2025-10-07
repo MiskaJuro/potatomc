@@ -1,1 +1,105 @@
-projekt ukončen.
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PotatoMC - Projekt ukončen</title>
+    <style>
+        /* Reset a základní styl */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #0d0d0d;
+            color: #cccccc;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .container {
+            background: rgba(20, 20, 20, 0.95);
+            padding: 50px 40px;
+            box-shadow: 0 0 40px rgba(0,0,0,0.2);
+            max-width: 500px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #888888;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #aaaaaa;
+        }
+
+        a {
+            display: inline-block;
+            margin: 8px 12px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #444444;
+            border-radius: 6px;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #222222;
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: 25px;
+            font-size: 0.9rem;
+            color: #666666;
+        }
+
+        /* Jemný animovaný efekt pozadí */
+        body::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(50,50,50,0.2) 0%, transparent 70%);
+            animation: drift 20s linear infinite;
+            z-index: 0;
+        }
+
+        @keyframes drift {
+            0% { transform: rotate(0deg) translateX(0); }
+            100% { transform: rotate(360deg) translateX(50px); }
+        }
+
+        .container, .links, footer {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PotatoMC</h1>
+        <p>Projekt byl ukončen. Zůstala jen prázdnota a vzpomínky.</p>
+        <div class="links">
+            <a href="https://github.com/tvoje-github" target="_blank">GitHub</a>
+            <a href="mailto:kontakt@potatomc.cz">Kontakt</a>
+        </div>
+        <footer>
+            &copy; 2025 PotatoMC. Vše vyhrazeno.
+        </footer>
+    </div>
+</body>
+</html>
